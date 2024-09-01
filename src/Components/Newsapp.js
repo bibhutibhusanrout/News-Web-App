@@ -6,7 +6,7 @@ const API_KEY = process.env.REACT_APP_API_KEY;
 const Newsapp = () => {
     const [search, setSearch] = useState("india");
     const [newsData, setNewsData] = useState(null)
-    const API_KEY = "87aa5f85ff5447cda209155157a13834";
+    // const API_KEY = "87aa5f85ff5447cda209155157a13834";
 
     const getData = async() =>{
         const response = await fetch(`https://newsapi.org/v2/everything?q=${search}&apiKey=${API_KEY}`);
